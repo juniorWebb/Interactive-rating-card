@@ -1,0 +1,133 @@
+:root{
+     --Orange: hsl(25, 97%, 53%);
+     --White: hsl(0, 0%, 100%);
+     --Light-Grey: hsl(217, 12%, 63%);
+     --Medium-Grey: hsl(216, 12%, 54%);
+     --Dark-Blue: hsl(213, 19%, 18%);
+     --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--Light-Grey);
+    transition: all .3s ease-out;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    background: var(--Very-Dark-Blue);
+}
+
+main{
+    display: grid;
+    place-items: center;
+    margin: 4rem auto;
+}
+
+section{
+    background: var(--Dark-Blue);
+    padding: 20px;
+    border-radius: 20px;
+    width: 320px;
+}
+
+.sectionOne{
+    display: block;
+}
+
+.sectionOne img{
+    background: hsl(214, 19%, 21%);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+section h2{
+    color: var(--White);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sectionOne .ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 2rem auto;
+}
+.sectionOne .ratings button{
+    background: hsl(214, 19%, 21%);
+    border-radius: 50%;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+}
+.sectionOne .ratings button:hover{
+    background: var(--Orange);
+    color: var(--White);
+}
+.sectionOne .ratings button:focus{
+    background: var(--Medium-Grey);
+    color: var(--White);
+}
+
+.sectionOne button{
+    background: var(--Orange);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    color: var(--White);
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.sectionOne button:hover{
+    color: var(--Orange);
+    background: var(--White);
+}
+
+.sectionTwo{
+    display: none;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 369px;
+}
+
+.sectionTwo img{
+    margin-bottom: 1rem;
+}
+
+.sectionTwo #rating-result{
+    background: hsl(214, 19%, 21%);
+    border-radius: 20px;
+    color: var(--Orange);
+    padding: 6px 16px;
+    margin-bottom: 1.4rem;
+    width: 80%;
+}
+.sectionTwo #result{
+    color: var(--Orange);
+}
+
+.sectionTwo p{
+    text-align: center;
+}
